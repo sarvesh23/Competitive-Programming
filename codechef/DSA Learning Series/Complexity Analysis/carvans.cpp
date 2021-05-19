@@ -1,30 +1,26 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-long int min(long int a, long int b)
-{
-    if(a>b)
-        return a;
-    else
-        return b;
-}
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  cout.tie(NULL);
 
-int main()
-{
-    int previous_car_speed = 99999999, current_car_speed, number_of_cars, current_car_max_speed;
-    cin>>number_of_cars;
-
-    int no_of_cars_at_max_speed = 0;
-    for(int i = 1; i <= number_of_cars; i++)
-    {
-        cin>>current_car_max_speed;
-
-        current_car_speed = min(previous_car_speed, current_car_max_speed);
-
-        no_of_cars_at_max_speed += (current_car_speed == current_car_max_speed);
-
-        previous_car_speed = current_car_speed;
+  int t, n;
+  cin >> t;
+  while (t--) {
+    cin >> n;
+    vector <int> v(n);
+    for (auto &i : v)
+      cin >> i;
+    int total = 1, current_maximum = v[0];
+    for (int i = 1; i < n; ++i) {
+      if (v[i] <= current_maximum) {
+        current_maximum = v[i];
+        ++total;
+      }
     }
-
-    cout<<"\n"<<no_of_cars_at_max_speed;
+    cout << total << '\n';
+  }
+  return 0;
 }

@@ -3,7 +3,7 @@
 #include<math.h>
 using namespace std;
 #define ll long long
-void power(ll x, ll y)
+int power(ll x, unsigned int y,int p)
 {
      
     // Initialize answer
@@ -15,15 +15,12 @@ void power(ll x, ll y)
          
         // If y is odd, multiply x with result
         if (y % 2 == 1)
-            res = ((res * x)+1000000007)%1000000007;
-             
+            res = (res * x)%p;
         // y = y/2
         y = y >> 1;
-         
-        // Change x to x^2
-        x = (x * x);
+        x = (x*x) % p; 
     }
-    cout<<(res+1000000007 )%1000000007<<endl;
+    return res;
 }
 int main()
 {
@@ -33,13 +30,12 @@ int main()
     cin>>t;
     while(t--)
     {
-        ll n;
+        unsigned int n;
+        ll x= 2;
+        int p = 1000000007 ;
         cin>>n;
-        n=n-1;
-        if(n==1)
-            cout<<"1"<<endl;
-        else
-            power(n,2);
-       // cout<<sum<<endl;
+        unsigned int result;
+        result = power(2,n-1,p);
+        cout<<result<<endl;
     }
 }

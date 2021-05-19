@@ -39,6 +39,7 @@
         "xtr1common": "cpp",
         "xutility": "cpp",
         "vector": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "unordered_map": "cpp"
     }
 }
