@@ -31,4 +31,3 @@ int main()
     sort(vec.begin(),vec.end());
     cout<<vec[0];
 }
-

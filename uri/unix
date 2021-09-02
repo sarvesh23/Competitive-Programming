@@ -1,0 +1,50 @@
+Mock 2 Solution
+
+awk 
+
+block 1 -begin
+{fs,ofs,count/any var=0}
+excuted once
+
+
+block 2
+{file record print//track}
+n times execution
+
+block 3 -end
+{
+    print //any
+}
+after processing
+
+
+awk 'BEGIN{ FS="|'}
+{
+    if($4 =="Sangamithra" && $5>=90 && &6>=90)
+    {
+        print $1"|$2"|"$3"|$4"|"($5+$6)/2;
+    }
+}END {}'|sort -k5 -t'|'
+
+
+if header then in begin use nr>1
+
+list gfg
+list funtions inn python
+awk command gfg https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+sort command gfghttps://www.geeksforgeeks.org/sort-command-linuxunix-examples/
+pipes and filters in unix gfg https://www.geeksforgeeks.org/pipes-and-filters-in-linux-unix/
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/
+https://www.geeksforgeeks.org/python-list-exercise/
+https://www.geeksforgeeks.org/max-min-python/
+https://www.geeksforgeeks.org/python-difference-between-sorted-and-sort/
+
+
+1) https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
+2) https://www.geeksforgeeks.org/awk-command-unixlinux-examples/
+3) https://www.geeksforgeeks.org/pipes-and-filters-in-linux-unix/
+4) https://www.geeksforgeeks.org/python-list-exercise/
+5) https://www.geeksforgeeks.org/max-min-python/
+6) https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+7) https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/
