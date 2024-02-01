@@ -1,0 +1,18 @@
+CAT 1 Syllabus Advanced Competitive Coding
+ 
+-Java introduction
+-Features of Java
+-Structure of Java
+-Datatypes
+-Basic input output
+-Operators
+-Decision making and control Structure\
+-Introduction to algorithm
+-Time and Space complexity
+-Simple Sieve
+-Simple and Incremental Sieve
+-Eulersphi algorithm
+-Chinese remainder theorom
+-Strobogrammatic number
+-Toggle the switch & Alice Apple tree
+-Binary Palindrome
