@@ -3,7 +3,7 @@ class Solution {
       
        int i = 0;
 
-            for (final int num : nums)
+            for (int num : nums)
                     if (i < 1 || num > nums[i - 1])
                         nums[i++] = num;
 
