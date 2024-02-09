@@ -24,11 +24,8 @@ public class Solution {
             {
                 if(temp==temp2)
                     return true;
-                if(temp.next!=null)
-                    temp=temp.next;
-                temp2=temp2.next;
-                if(temp2.next!=null)
-                    temp2=temp2.next;
+               temp=temp.next;
+               temp2=temp2.next.next;
             }
             return false;
 
