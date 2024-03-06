@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "IntroLL",
+      "request": "launch",
+      "mainClass": "striver.IntroLL",
+      "projectName": "Competitive-Programming_31028a8b"
+    },
+    {
+      "type": "java",
       "name": "ChineseRemainder",
       "request": "launch",
       "mainClass": "ChineseRemainder",
